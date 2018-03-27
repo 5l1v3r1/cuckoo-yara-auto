@@ -40,6 +40,9 @@ class YaraRules:
 
 def main(args):
     BASE_DIR = args.get('dir') if args.get('dir') else os.path.join(str(Path.home()), '.cuckoo', 'yara')
+    os.chdir(BASE_DIR)
+
+    print(BASE_DIR)
 
     try:
         assert os.path.exists(BASE_DIR)
