@@ -81,7 +81,7 @@
     5) ``   make && make install ``
     
 - VMCloak:
-    ```python
+    ```javascript
     apt install libyaml-dev libpython2.7-dev genisoimage -y
     cd /root/Downloads/ && git clone -b vrde https://github.com/tweemeterjop/vmcloak.git
     cd vmcloak/ && /home/cuckoo/.cuckoo/agent/agent.py vmcloak/data/bootstrap/
